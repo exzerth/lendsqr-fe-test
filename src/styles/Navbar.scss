@@ -1,0 +1,83 @@
+nav {
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 3px 0px 20px rgba(0, 0, 0, 0.04);
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 160px;
+}
+
+.search-box {
+    width: 400px;
+    height: 40px;
+    border: 1px solid #213F7D;
+    border-radius: 8px;
+    color: #545F7D;
+    font-size: 14px;
+    opacity: 0.2;
+}
+
+.search-box::placeholder {
+    padding-left: 20px;
+    opacity: 0.9;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.doc-link {
+    color: #213F7D;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+.notif-icon {
+    padding-right: 20px;
+}
+
+.avatar-img {
+    border-radius: 50%;
+}
+
+.profile-name {
+    font-size: 16px;
+    color: #213F7D;
+    font-weight: 500;
+}
+
+.profile-name::after {
+    content: url(../images/caret-down.svg);
+    font-size: 20px;
+    padding-left: 10px;
+    position: absolute;
+    top: 6px;
+    right: -15px;
+}
