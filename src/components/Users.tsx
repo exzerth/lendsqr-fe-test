@@ -22,6 +22,11 @@ const Users = () => {
     fetchData();
   }, []);
 
+  const formatOrgName = (org: string): string => {
+    const hyphenIndex = org.indexOf("-");
+    return org.substring(0, hyphenIndex);
+  };
+
   const formatPhoneNumber = (phone: string): string => {
     phone = phone.replace(/^1-|\./g, "");
 
@@ -74,7 +79,7 @@ const Users = () => {
         <tbody>
           {users.map((user, index) => (
             <tr key={index}>
-              <td>{user.orgName}</td>
+              <td>{formatOrgName(user.orgName)}</td>
               <td>{user.userName}</td>
               <td>{user.email}</td>
               <td>{formatPhoneNumber(user.phoneNumber)}</td>
