@@ -1,9 +1,10 @@
 import brandLogo from "../images/lendsqrlogo.svg";
 import notifIcon from "../images/notif.svg";
 import avatarImg from "../images/avatar.svg";
+import searchIcon from "../images/search.svg";
 import "../styles/Navbar.scss";
 
-const Navbar = () => {
+const Navbar: React.FC = () => {
   return (
     <>
       <nav>
@@ -13,11 +14,14 @@ const Navbar = () => {
               <div className="brand-logo">
                 <img src={brandLogo} alt="lendsqr logo" />
               </div>
-              <input
-                className="search-box"
-                type="text"
-                placeholder="search for anything"
-              />
+              <div className="search">
+                <input
+                  className="search-box"
+                  type="text"
+                  placeholder="search for anything"
+                />
+                <img className="search-icon" src={searchIcon} alt="search" />
+              </div>
             </div>
             <div className="right">
               <a className="doc-link" href="#doc">

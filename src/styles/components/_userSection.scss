@@ -1,0 +1,66 @@
+@use "../abtracts/variables" as *;
+@use "../abtracts/mixins" as *;
+
+//section styles
+section {
+    width: 75%;
+    padding-right: 111.6px;
+    padding-left: 60px;
+}
+
+.section-title {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    color: $textColor;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.user-cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    padding-bottom: 40px;
+}
+
+.card {
+    width: 240px;
+    padding: 20px 0 20px 30px;
+    @include cardsBorders;
+}
+
+.card-text {
+    font-size: 14px;
+    font-weight: 500;
+    color: $secondaryColor;
+    padding: 12px 0;
+}
+
+.card-number {
+    font-size: 24px;
+    font-weight: 600;
+    color: $textColor;
+    padding-bottom: 10px;
+}
+
+.users-table {
+    @include cardsBorders;
+}
+
+th {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: start;
+    color: $secondaryColor;
+    padding: 0 10px;
+}
+
+td {
+    font-size: 12px;
+    font-weight: 400;
+    text-align: start;
+    color: $secondaryColor;
+    padding: 0 10px;
+}
